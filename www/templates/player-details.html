@@ -1,0 +1,19 @@
+<ion-view view-title="{{player.name}}">
+    <ion-content>
+        <ion-list class="list-inset">
+            <ion-item class="item item-body item-text-wrap">
+                <div class="row responsive-">
+                        <img ng-src="{{player.img}}" alt="{{ player.name }} Photo" class="col col-33" style="max-width: 250px!important;">
+                    <div class="col col-33">
+                        <h2>{{ player.name }}</h2>
+                        <h3>{{ player.position }}</h3>
+                        No <span class="big-font">{{player.number}}</span>
+                        <h3>Born at: </h3>
+                        <h2>{{player.birth}} </h2>
+                    </div>
+                </div>
+                <p>{{ player.bio }}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

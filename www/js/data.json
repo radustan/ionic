@@ -1,0 +1,76 @@
+{
+  "players": [
+    {
+      "bio": "He is quick, has great reflexes, always positions himself well and is one of the best in one-to-ones; Keylor Navas has everything it takes to be an exceptional keeper. He demonstrated it in Brazil, where he only let in two goals in five matches and took Costa Rica to the quarter-finals for the first time in their history.",
+      "shortname": "keylor_navas",
+      "name": "Keylor Navas",
+      "position": "Goalkeeper",
+      "birth": "San Isidro (Costa Rica)",
+      "number": 1
+    },
+    {
+      "bio": "He was playing for Lens when Real Madrid decided to sign him and, just a year after he arrived, the team won the Liga and the Spanish Super Cup. He has also achieved success in his home country and now plays for the French national team.",
+      "shortname": "raphael_varane",
+      "name": "Raphael Varane",
+      "position": "Defender (central)",
+      "birth": "Lille (France)",
+      "number": 2
+    },
+    {
+      "bio": "His reliability in defence has made him a regular for Spain for whom he made his international debut at just 19. He was an important part of the Spanish team that won the FIFA World CUP in 2010 and the UEFA European Championship in 2008 and 2012.",
+      "shortname": "sergio_ramos",
+      "name": "Sergio Ramos",
+      "position": "Defender (central)",
+      "birth": "Camas (Sevilla, Spain)",
+      "number": 4
+    },
+    {
+      "bio": "Marcelo came to Europe when he was 18 having already triumphed in Brazil. He is a very fast, attacking full-back who has worked hard since his arrival to take the opportunities that his coaches have given him to secure a place in the first team.",
+      "shortname": "marcelo_vieira",
+      "name": "Marcelo Vieira",
+      "position": "Defender (left)",
+      "birth": "Río de Janeiro (Brazil)",
+      "number": 12
+    },
+    {
+      "bio": "Real Madrid have, in this central midfielder, a leader who is capable of making the right choice in every situation, with incredible vision to provide assists for teammates, an impressive strike of the ball and terrific dead ball delivery. His versatility means that he can play anywhere in the midfield.",
+      "shortname": "toni_kross",
+      "name": "Toni Kross",
+      "position": "Midfielder",
+      "birth": "Greifswald (Germany)",
+      "number": 8
+    },
+    {
+      "bio": "He scored six times at the championships in Brazil and left behind wonder goals such as the volley against Uruguay, which was chosen as the goal of the tournament by FIFA.com users. He was without doubt key to Colombia reaching the quarter-finals for the first time in their history. He was named the man of the match in three of the five matches he played.",
+      "shortname": "james_rodrigues",
+      "name": "James Rodrigues",
+      "position": "Midfielder",
+      "birth": "Cucuta (Colombia)",
+      "number": 10
+    },
+    {
+      "bio": "After scoring 26 goals in 44 matches last season, Bale joined Real Madrid in September 2013. In Madrid he has been reunited with Luka Modric, his old teammate at Spurs and has brought his attacking potential to a Madrid team that with Cristiano Ronaldo was already a major force.",
+      "shortname": "gareth_bale",
+      "name": "Gareth Bale",
+      "position": "Midfielder",
+      "birth": "Cardiff (Wales)",
+      "number": 11
+    },
+    {
+      "bio": "He has an insatiable appetite for goals, truly immense physical strength, lightning speed, a fierce shot with both feet and he is also a fine header of the ball, all of which make him a constant threat for opposing defenders.",
+      "shortname": "cristiano_ronaldo",
+      "name": "Cristiano Ronaldo",
+      "position": "Forward",
+      "birth": "Funchal (Portugal)",
+      "number": 7
+    },
+    {
+      "bio": "A precocious talent and widely considered to be one of best all-round forwards in the world, Benzema can make his own chances, finish clinically in the area and make assists for his teammates. He always places his talents at the service of the team.",
+      "shortname": "karim_benzema",
+      "name": "Karim Benzema",
+      "position": "Forward",
+      "birth": "Lyon (France)",
+      "number": 9
+    }
+  ]
+}

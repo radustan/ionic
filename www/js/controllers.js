@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('HomeCtrl', function($scope) {})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
@@ -20,6 +20,47 @@ angular.module('starter.controllers', [])
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
 })
+
+.controller('PlayerDetailsCtrl', function($scope, $http, $stateParams, $sce) {
+    $http.get('js/data.json').success(function(data) {
+      for (var i = 0; i < data.players.length; i++) {
+        if (data.players[i].number === parseInt($stateParams.pId)) {
+          $scope.player = data.players[i];
+          var imgUrl = 'img/' + $scope.player.shortname + '.jpg';
+          $scope.player.img = imgUrl;
+              console.log($scope.player);
+        }
+      }
+    });
+})
+
+.controller('PlayersCtrl', ['$scope', '$http', '$state',
+  function($scope, $http) {
+    $http.get('js/data.json').success(function(data) {
+      $scope.players = data.players;
+      $scope.data = { showDelete: false, showReorder: false };
+
+      $scope.onItemDelete = function(item) {
+        $scope.players.splice($scope.players.indexOf(item), 1);
+      };
+
+      $scope.doRefresh = function() {
+        $http.get('js/data.json').success(function(data) {
+          $scope.players = data.players;
+          $scope.$broadcast('scroll.refreshComplete');
+        });
+      };
+
+      $scope.toggleStar = function(item) {
+        item.star = !item.star;
+      };
+
+      $scope.moveItem = function(item, fromIndex, toIndex) {
+        $scope.players.splice(fromIndex, 1);
+        $scope.players.splice(toIndex, 0, item);
+      };
+    });
+  }])
 
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
