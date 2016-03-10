@@ -62,8 +62,16 @@ angular.module('starter.controllers', [])
     });
   }])
 
-.controller('AccountCtrl', function($scope) {
+.controller('AccountCtrl', function($scope, Camera) {
   $scope.settings = {
     enableFriends: true
   };
+
+  $scope.getPhoto = function() {
+    Camera.getPicture().then(function (imageURI) {
+      console.log(imageURI);
+    }, function (err) {
+      console.err(err);
+    });
+  }
 });
