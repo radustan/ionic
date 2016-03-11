@@ -2,14 +2,16 @@
     <ion-content>
         <ion-list class="list-inset">
             <ion-item class="item item-body item-text-wrap">
-                <div class="row responsive-">
-                        <img ng-src="{{player.img}}" alt="{{ player.name }} Photo" class="col col-33" style="max-width: 250px!important;">
+                <div class="row">
+                    <div class="col-66">
+                        <img ng-src="{{player.img}}" alt="{{ player.name }} Photo" width="100%" style="max-height: 300px; max-width: 250px">
+                    </div>
                     <div class="col col-33">
-                        <h2>{{ player.name }}</h2>
+                        <div>{{ player.name }}</div>
                         <h3>{{ player.position }}</h3>
                         No <span class="big-font">{{player.number}}</span>
-                        <h3>Born at: </h3>
-                        <h2>{{player.birth}} </h2>
+                        <div class="padding-top">Born at: </div>
+                        <div>{{player.birth}} </div>
                     </div>
                 </div>
                 <p>{{ player.bio }}</p>

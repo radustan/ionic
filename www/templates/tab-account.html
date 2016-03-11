@@ -1,10 +1,35 @@
 <ion-view view-title="Account">
-  <ion-content>
-    <button ng-click="getPhoto()" class="button button-block button-primary">Photo</button>
-    <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
-    </ion-list>
-  </ion-content>
+    <ion-content>
+        <button ng-click="getPhoto()" class="button button-block button-positive item-icon-left"><i class="icon ion-android-camera"></i>Take A Photo</button>
+        <div class="item item-divider">
+            <i class="ion-images"></i>
+            Taken photos
+        </div>
+        <a class="item item-list-detail">
+            <ion-scroll direction="x">
+                <img ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="showImages($index)" class="image-list-thumb"/>
+            </ion-scroll>
+        </a>
+        <form ></form>
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Number</span>
+                <input type="text" ng-model="number" placeholder="Number" required>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Text</span>
+                <input type="text" ng-model="text" placeholder="text" required>
+            </label>
+            <div class="padding">
+                <button ng-click="sendSMS(number, text)" class="button button-block button-positive">
+                    SEND
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="item item-text-wrap">
+                {{smsresponse}}
+            </div>
+        </div>
+    </ion-content>
 </ion-view>
